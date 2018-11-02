@@ -1,0 +1,3 @@
+# Edge detection WITHOUT OpenCV
+
+Reinventing the wheel but why not...
