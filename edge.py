@@ -40,7 +40,7 @@ if len(argv) == 1:
 	response = input("Process test image? (Y/n) ")
 	if response.upper() != "Y":
 		exit()
-	image = Image.open("test.jpg").convert('RGB')
+	image = Image.open("test.jpg")
 	op = "res.png"
 	intensity = 8
 	print('''
@@ -49,7 +49,7 @@ output image = res.png
 highlighting intensity = 8''')
 
 else:
-	image = Image.open(argv[1]).convert('RGB')
+	image = Image.open(argv[1])
 	op = argv[2]
 	intensity = float(argv[3])
 
